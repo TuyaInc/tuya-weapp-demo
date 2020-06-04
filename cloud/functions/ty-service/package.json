@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tuya-smart": "^1.0.6",
     "wx-server-sdk": "^1.8.3"
   }
 }

@@ -3,6 +3,7 @@ import { connect } from '@tarojs/redux'
 import { View, Image, Text } from '@tarojs/components'
 
 import { whitout } from '../../Img'
+import { testCloud } from './Services'
 import style from './Index.module.less'
 
 interface IndexProps {
@@ -25,6 +26,25 @@ class Index extends Taro.Component<IndexProps, IndexState> {
   componentDidShow() {
     const { dispatch } = this.props
     dispatch({ type: 'DeviceList/getDeviceList', payload: {} })
+  }
+
+  async componentDidMount() {
+    const { tips } = await testCloud()
+    if (tips) {
+      Taro.showToast({
+        title: tips,
+        icon: "none",
+        duration: 3000,
+        mask: true
+      });
+    } else {
+      Taro.showToast({
+        title: '您的云函数未配置成功，请按照文档配置',
+        icon: "none",
+        duration: 3000,
+        mask: true
+      });
+    }
   }
 
   turnDevicePage = (device: any) => {

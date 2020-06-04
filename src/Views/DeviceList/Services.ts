@@ -11,4 +11,15 @@ const getDeviceList = () => {
   return Request(params)
 }
 
-export { getDeviceList }
+const testCloud = () => {
+  const params = {
+    name: 'ty-service',
+    data: {
+      action: 'hello',
+      params: {}
+    }
+  }
+  return Request(params)
+}
+
+export { getDeviceList, testCloud }
