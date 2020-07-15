@@ -22,7 +22,8 @@ class App extends Taro.Component {
   config: Config = {
     pages: [
       'Views/DeviceList/Index',
-      'Views/Panel/Index'
+      'Views/Panel/Index',
+      'Views/Kg/Index',
     ],
     window: {
       backgroundColor: '#F6F6F6',

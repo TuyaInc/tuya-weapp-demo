@@ -49,10 +49,21 @@ class Index extends Taro.Component<IndexProps, IndexState> {
   }
 
   turnDevicePage = (device: any) => {
-    const { id } = device
-    Taro.navigateTo({
-      url: `/Views/Panel/Index?deviceId=${id}`
-    })
+    const { category, id } = device;
+
+    switch (category) {
+      case 'cz': {
+        Taro.navigateTo({
+          url: `/Views/Kg/Index?device_id=${id}`
+        })
+        break;
+      }
+      default:
+        Taro.navigateTo({
+          url: `/Views/Panel/Index?deviceId=${id}`
+        });
+        break;
+    }
   }
 
   public render(): JSX.Element {
