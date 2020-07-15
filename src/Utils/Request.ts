@@ -13,7 +13,8 @@ export const login = async () => {
         data: {
             action: "user.wx-applet.synchronization",
             params: {
-                type: "login"
+                open_id: "cloud",
+                app_schema: "cloud"
             }
         }
     };
@@ -26,19 +27,18 @@ const setUid = async (params: params) => {
     const {
         data: { action }
     } = params;
-    // let uid = Taro.getStorageSync("uid");
-    let uid = 'ay1583407426179YxU9C'
-    // const isNoLogin = action !== "user.wx-applet.synchronization";
-    // if (!uid && isNoLogin && count > 0) {
-    //     console.log("count", count);
-    //     await login();
-    //     count--;
-    //     return setUid(params);
-    // }
-    // if (uid && isNoLogin) {
-    //     params.data.params || (params.data.params = {});
-    //     params.data.params["uid"] = uid;
-    // }
+    let uid = Taro.getStorageSync("uid");
+    const isNoLogin = action !== "user.wx-applet.synchronization";
+    if (!uid && isNoLogin && count > 0) {
+        console.log("count", count);
+        await login();
+        count--;
+        return setUid(params);
+    }
+    if (uid && isNoLogin) {
+        params.data.params || (params.data.params = {});
+        params.data.params["uid"] = uid;
+    }
     params.data.params["uid"] = uid;
 };
 

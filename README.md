@@ -1,3 +1,7 @@
+<p align="center"><a href="https://www.tuya.com/cn/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://static1.tuyaus.com/static/ty-lib/apple-touch-icon.png" ></a></p>
+
+<a href="https://www.tuya.com/cn/" target="_blank" rel="noopener noreferrer"><h2 align="center">Supporting By Tuya</h2></a>
+
 ### 快速开始
 
 1.克隆项目代码
@@ -11,6 +15,7 @@ $ git clone https://github.com/TuyaInc/tuya-miniapp-demo.git
 ```
 $ npm install
 ```
+
 3.开启自动打包
 ```
 $ npm run dev:weapp
@@ -22,3 +27,7 @@ $ npm run dev:weapp
 选择项目目录，填写你的 AppID，点击 **导入**
 
 更详细的文档，可参考[这里](./document/explain.md)
+
+## tips
+- node 版本 v10.0.0 及以上
+- taro 版本 v1.3.15

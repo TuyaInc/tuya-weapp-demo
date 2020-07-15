@@ -29,10 +29,11 @@ class Index extends Taro.Component<IndexProps, IndexState> {
   }
 
   async componentDidMount() {
-    const { tips } = await testCloud()
-    if (tips) {
+    const res = await testCloud()
+
+    if (res) {
       Taro.showToast({
-        title: tips,
+        title: res,
         icon: "none",
         duration: 3000,
         mask: true

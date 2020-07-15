@@ -429,11 +429,6 @@
     webpack-dev-server "3.1.14"
     webpack-format-messages "2.0.3"
 
-"@tuya-fe/color-convert@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry-npm.tuya-inc.top/@tuya-fe/color-convert/download/@tuya-fe/color-convert-1.0.3.tgz#2fe2629524b5fae424f0ddeebfa024f7ab8ccdbf"
-  integrity sha1-L+JilSS1+uQk8N3uv6Ak96uMzb8=
-
 "@types/caseless@*":
   version "0.12.2"
   resolved "https://registry.npm.taobao.org/@types/caseless/download/@types/caseless-0.12.2.tgz#f65d3d6389e01eeb458bd54dc8f52b95a9463bc8"
