@@ -27,6 +27,7 @@ $ npm run dev:weapp
 选择项目目录，填写你的 AppID，点击 **导入**
 
 更详细的文档，可参考[这里](./document/explain.md)
+涂鸦小程序生态，可查看[这里](https://docs.tuya.com/zh/iot/mini-programs/overview/applet-ecology?id=K9ptacgp94o5d)
 
 ## tips
 - node 版本 v10.0.0 及以上
