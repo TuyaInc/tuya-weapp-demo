@@ -74,6 +74,4 @@
 ## 技术支持
 
   文档看了这么多，还是有很多疑问？需要有技术支持？对我们的小程序有建议？有吐槽？有需求？您可以添加下面的微信为好友，随时答疑解惑（验证消息中写明：技术交流，不然没法通过）。
-  <p align="center"  >
     <img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/goat/20200811/52a6139793854a2ea7d3ce15dd59d40c.png" alt="drawing" width="200"/>
-  </p>
