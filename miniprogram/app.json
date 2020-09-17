@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/guide/index",
+    "pages/home/index",
+    "pages/deviceDisplay/index",
+    "pages/family/familyControl/index",
+    "pages/family/familyList/index",
+    "pages/guide/network/index",
+    "pages/guide/deviceControl/index",
+    "pages/family/addFamily/index",
+    "pages/family/memberInfo/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "tuya-ap-plugin": {
+      "version": "3.2.5",
+      "provider": "wxd2aa51ffacc3ff86"
+    }
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "设备"
+      },
+      {
+        "pagePath": "pages/family/familyList/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "家庭"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

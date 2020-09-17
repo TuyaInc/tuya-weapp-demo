@@ -1,0 +1,31 @@
+<!--pages/guide/deviceControl/index.wxml-->
+
+<block wx:if="{{errText === ''}}">
+  <view class="uploader">
+    <view class="uploader-text" bindtap="">
+      点击下列设备进入设备DP功能控制页
+    </view> 
+  </view>
+  <block wx:for="{{deviceList}}" wx:key="{{item.id}}">
+    <view class="devItem" data-devid="{{item.id}}" data-name="{{item.name}}" bindtap="turnDeviceOn">
+      <image class="devItem-img" src="https://images.tuyacn.com/{{item.icon}}"></image>
+      <view class="devItem-title">{{item.name}}</view>
+    </view>
+  </block>
+</block>
+
+<block wx:if="{{errText !== ''}}">
+  <view class="info-title">
+    请在添加设备后再体验设备控制
+  </view>
+  <view class="uploader">
+    <view class="uploader-text" bindtap="gotoApNetwork">
+      AP配网
+    </view> 
+  </view>
+  <view class="uploader">
+    <view class="uploader-text" bindtap="gotoVirtualNetwork">
+      扫码配网(虚拟设备)
+    </view> 
+  </view>
+</block>

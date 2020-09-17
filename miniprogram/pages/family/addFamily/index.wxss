@@ -1,0 +1,27 @@
+/* miniprogram/pages/family/addFamily/index.wxss */
+.input {
+  background-color: #fff;
+  display: flex;
+  padding: 10px 15px;
+}
+
+.title {
+  margin-right: 15px;
+}
+
+.config {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-top: 16px;
+  width: 244px;
+  height: 48px;
+  background-color: #ff5a28;
+  color: #fff;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 27px;
+}
+

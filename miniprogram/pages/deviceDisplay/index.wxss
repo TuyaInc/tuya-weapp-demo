@@ -1,0 +1,14 @@
+/* pages/deviceDisplay/index.wxss */
+page{
+  background-color: #f8f8f8;
+}
+
+.deviceDisplay {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-label {
+  font-size: 13px;
+}

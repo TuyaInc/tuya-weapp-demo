@@ -1,0 +1,24 @@
+<!--pages/family/familyControl/index.wxml-->
+<view class="familyTitle">
+  <text>家庭成员</text>
+</view>
+
+<scroll-view
+  class="memberList"
+  scroll-y="true"
+>
+  <block wx:if="{{memberList.length !== 0}}">
+    <block wx:for="{{memberList}}" wx:key="{{item.uid}}" wx:for-item="item">
+      <view class="memberItem" data-memberinfo="{{item}}" bindtap="gotoMemberInfo">
+        <view class="memberItem-header">
+          <image class="memberItem-header-thumber" src="{{item.avatar}}" />
+          <view class="memberItem-header-name">{{item.name.length !== 0 ? item.name : '未授权用户' }}</view>
+        </view>
+      </view>
+    </block>
+  </block>
+</scroll-view>
+
+<view class="uploader">
+  <view class="uploader-text" bindtap="delateFamily">删除家庭</view>
+</view>

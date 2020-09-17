@@ -1,0 +1,45 @@
+/* miniprogram/pages/family/memberInfo/index.wxss */
+.config {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+}
+
+.btn {
+  margin-top: 16px;
+  width: 244px;
+  height: 48px;
+  background-color: #ff5a28;
+  color: #fff;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 27px;
+}
+
+.uploader {
+  margin-top: 40rpx;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  height: auto;
+  padding: 0 0 0 40rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.uploader-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #007aff;
+}

@@ -1,0 +1,17 @@
+<!--pages/family/familyList/index.wxml-->
+<scroll-view
+  class="familyList"
+  enable-flex="true"
+  scroll-Y="true"
+>
+  <block wx:for="{{familyList}}" wx:key="{{item.home_id}}">
+    <view class="familyList-item" data-homeid="{{item.home_id}}" bindtap="turnFamilycontrolPage">
+      <view class="familyList-item-title">{{item.name}}</view>
+      <view class="rightArrow">
+        <view class="rightArrow-arrow" />
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+<view class="addFamily" bindtap="turnAddfamilyPage">添加家庭</view>

@@ -1,0 +1,53 @@
+/* pages/guide/network/index.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.info-title {
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #22242c;
+}
+
+.info-label {
+  width: 100%;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #22242c;
+  white-space: pre-wrap;
+}
+
+.info-text {
+  margin-top: 5px;
+  width: 100%;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #22242c;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 200px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+	background-color: #ff5a28;
+  border-radius: 27px;
+  font-family: PingFangSC-Semibold;
+	font-size: 16px;
+  color: #fff;
+}

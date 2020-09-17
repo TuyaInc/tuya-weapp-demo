@@ -1,0 +1,85 @@
+/* pages/deviceDisplay/components/Integer/index.wxss */
+
+.InterItem {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40rpx;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  transition: all 300ms ease;
+  height: auto;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.InterItem-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.InterItem-header-dpCode {
+	font-family: PingFangSC-Semibold;
+	font-size: 24px;
+	color: #353535;
+}
+
+.InterItem-header-dpType {
+  font-size: 14px;
+  color: #000;
+}
+
+.InterItem-footer {
+  width: 100px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.InterItem-footer-descNumber {
+  width: 20px;
+  height: 4px;
+  background: rgba(73, 80, 84, 1);
+  border-radius: 2px;
+}
+
+.InterItem-footer-Number {
+  width: 40px;
+  text-align: center;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.InterItem-footer-addNumber {
+  width: 20px;
+  height: 40px;
+}
+
+.InterItem-footer-addNumber::before,
+.InterItem-footer-addNumber::after {
+  content: '';
+  width: 20px;
+  height: 4px;
+  position: absolute;
+  top: 45%;
+  background: rgb(61, 71, 77);
+  border-radius: 2px;
+}
+
+.InterItem-footer-addNumber::before {
+  transform: rotate(90deg);
+}
+
+.InterItem-footer-block {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

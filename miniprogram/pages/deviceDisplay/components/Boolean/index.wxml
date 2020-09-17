@@ -1,0 +1,9 @@
+<!--pages/deviceDisplay/components/Boolean/index.wxml-->
+<view class="BooleanItem">
+  <view class="BooleanItem-header">
+    <text class="BooleanItem-header-dpCode">{{dpCode}}</text>
+    <text class="BooleanItem-header-dpType">布尔型</text>
+  </view>
+
+  <switch checked="{{isChecked}}" bindchange="onSwitch" />
+</view>

@@ -1,0 +1,67 @@
+/* pages/family/familyControl/index.wxss */
+.familyTitle {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.memberList {
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.memberItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px;
+}
+
+.memberItem-header {
+  display: flex;
+  align-items: center;
+}
+
+.memberItem-header-thumber {
+  margin-right: 8px;
+  width: 38px;
+  height: 38px;
+  border-radius: 25px;
+}
+
+.memberItem-header-name {
+  font-size: 16px;
+  color: #22242c;
+}
+
+.memberItem-footer {
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.uploader {
+  margin-top: 40rpx;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  height: auto;
+  padding: 0 0 0 40rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.uploader-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #007aff;
+}

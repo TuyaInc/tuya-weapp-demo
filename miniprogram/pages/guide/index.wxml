@@ -1,0 +1,23 @@
+<!--pages/guide/index.wxml-->
+
+<view class="uploader">
+  <view class="uploader-text" bindtap="gotoHomePage">完整版Demo</view> 
+</view>
+
+<view class="uploader">
+  <navigator class="uploader-text" open-type="navigate" url="./network/index">设备配网</navigator> 
+</view>
+
+<view class="uploader">
+  <navigator class="uploader-text" open-type="navigate" url="./deviceControl/index">体验设备控制</navigator>
+</view>
+
+<view class="uploader">
+  <view class="uploader-text" bindtap="gotoFamily">家庭功能模块</view> 
+</view>
+
+
+
+
+
+

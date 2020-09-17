@@ -1,0 +1,17 @@
+<!--miniprogram/pages/family/addFamily/index.wxml-->
+<view>
+  <view class="input">
+    <view class="title">家庭名称：</view>
+    <input
+      style="flex: 1"
+      value=""
+      type="text"
+      placeholder="允许输入的最大长度为10"
+      maxlength="10"
+      bindinput="onInput"
+    />
+  </view>
+  <view class="config">
+    <view class="btn" bindtap="onAddFamily">保存</view>
+  </view>
+</view>

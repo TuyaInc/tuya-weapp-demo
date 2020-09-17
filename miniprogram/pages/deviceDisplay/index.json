@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "BooleanItem": "./components/Boolean/index",
+    "EnumItem": "./components/Enum/index",
+    "IntergerItem": "./components/Integer/index"
+  }
+}

@@ -1,0 +1,16 @@
+<!--miniprogram/pages/family/memberInfo/index.wxml-->
+<view class="uploader">
+  <image class="avatar" src="{{memberinfo.avatar}}" />
+</view>
+
+<view class="uploader">
+  <text class="uploader-text">用户名:{{memberinfo.name}}</text>
+</view>
+
+<view class="uploader">
+  <text class="uploader-text">是否为管理员:{{memberinfo.admin ? '管理员' : 'chengy'}}</text>
+</view>
+
+<view class="config">
+  <view class="btn" bindtap="onDelateMember">删除</view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/deviceDisplay/components/Integer/index.wxml-->
+<view class="InterItem">
+  <view class="InterItem-header">
+    <text class="InterItem-header-dpCode">{{dpCode}}</text>
+    <text class="InterItem-header-dpType">数值型</text>
+  </view>
+
+  <view class="InterItem-footer">
+    <view class="InterItem-footer-block" bindtap="decs">
+     <view class="InterItem-footer-descNumber" />
+    </view>
+
+    <view class="InterItem-footer-Number">{{value}}</view>
+
+    <view class="InterItem-footer-block" bindtap="add">
+      <view class="InterItem-footer-addNumber" />
+    </view>
+  </view>
+</view>

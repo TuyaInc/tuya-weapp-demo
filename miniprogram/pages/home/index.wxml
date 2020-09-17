@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="headerBar">
+    <view class="headerBar-title">所有设备</view>
+    <view class="headerBar-title" bindtap="goToGuidePage">Demo</view>
+    <image src="../../image/addDevicebtn@2x.png" class="adDevBtn" bindtap="GotoAddDevice" />
+  </view>
+
+  <scroll-view class="containers" scroll-y="true" enable-flex="true">
+    <block wx:if="{{deviceList.length > 0}}">
+     <block wx:for="{{deviceList}}" wx:key="{{item.id}}">
+       <view class="devItem" data-devid="{{item.id}}" data-name="{{item.name}}" bindtap="turnDeviceOn">
+          <image class="devItem-img" src="https://images.tuyacn.com/{{item.icon}}"></image>
+          <view class="devItem-title">{{item.name}}</view>
+       </view>
+     </block>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/deviceDisplay/components/Enum/index.wxml-->
+<view class="EnumItem">
+  <view class="EnumItem-header">
+    <text class="EnumItem-header-dpCode">{{dpCode}}</text>
+    <text class="EnumItem-header-dpType">枚举型</text>
+  </view>
+
+  <view class="EnumItem-footer" bindtap="onActionSheetShow">
+    <text class="EnumItem-footer-label">{{value}}</text>
+    <view class="Enum-item-arrow">
+      <view class="Enum-item-upArrow" />
+      <view class="Enum-item-downArrow" />
+    </view>
+  </view>
+</view>
+
+<mp-actionSheet title="{{dpCode}}" show="{{actionShow}}" mask-class="{{true}}" actions="{{actions}}"  bindclose="onActionSheetShow" bindactiontap="onChange" />
