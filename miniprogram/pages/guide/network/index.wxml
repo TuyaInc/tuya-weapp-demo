@@ -1,35 +1,24 @@
-<!--pages/guide/network/index.wxml-->
-
-  <view class="info-title">配网SDK使用</view>
-  
-  <view class="info">
-    <view class="info-text">快速使用：</view>
-    <view class="info-label">插件申请：小程序后台-设置-第三方设置-插件管理-添加插件 (搜索”涂鸦智能配网“ )</view>
-
-    <view class="info-label">在app.json中配置</view>
-    <view class="info-label">
-      "plugins": {
+<!-- pages/guide/network/index.wxml -->
+<view class="info-title">配网插件的使用</view>
+<view class="info">
+  <view class="info-text">快速使用：</view>
+  <view class="info-label">插件申请：小程序后台-设置-第三方设置-插件管理-添加插件 (搜索”涂鸦智能配网“ )</view>
+  <view class="info-label">在app.json中配置</view>
+  <view class="info-label">
+    "plugins": {
         "tuya-ap-plugin": {
           "version": "3.2.4",
           "provider": "wxd2aa51ffacc3ff86"
         }
       },
-    </view>
   </view>
-
-
-  <view class="info-title">跳转插件：</view>
-
-  <view class="info" bindlongtap="onCopy">
-    <view class="info-text">
-      AP配网路径: (具体路参请长按获取链接)
-    </view>
-    <text class="info-text">plugin://tuya-ap-plugin/step1</text>
-    <view class="btn" bindtap="gotoApNetwork">AP配网</view>
-
-    <view class="info-text" bindlongtap="onCopy">扫码添加虚拟设备路径: (具体路参请长按获取链接)</view>
-    <view class="info-text">plugin://tuya-ap-plugin/virtual</view>
-    <view class="btn" bindtap="gotoVirtualNetwork">扫码添加虚拟设备</view>
-  </view>
-
-
+</view>
+<view class="info-title">跳转插件：</view>
+<view class="info" bindlongtap="onCopy">
+  <view class="info-text" bindtap="onJump">AP配网路径: (具体参数请参考文档平台)</view>
+  <text class="info-text">plugin://tuya-ap-plugin/step1</text>
+  <view class="btn" bindtap="gotoApNetwork">AP配网</view>
+  <view class="info-text" bindlongtap="onCopy">扫码添加虚拟设备路径: (具体参数请参考文档平台)</view>
+  <view class="info-text">plugin://tuya-ap-plugin/virtual</view>
+  <view class="btn" bindtap="gotoVirtualNetwork">扫码添加虚拟设备</view>
+</view>

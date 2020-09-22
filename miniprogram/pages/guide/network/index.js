@@ -13,10 +13,13 @@ Page({
   /**
    * 插件文档链接
    */
-  onCopy: function() {
+  onCopy: function () {
     wx.setClipboardData({
       data: 'https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wxd2aa51ffacc3ff86&token=1662994465&lang=zh_CN',
     })
+  },
+  onJump: function () {
+    wx.miniProgram.navigateTo({ url: 'https://developer.tuya.com/cn/docs/iot/app-development/mini-programs/tuya-applet-with-web-plugin/distribution-network-plugin?id=K9lq218xn0wn8' })
   },
 
   /**
