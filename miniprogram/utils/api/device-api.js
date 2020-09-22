@@ -74,3 +74,12 @@ export const deviceControl = (device_id, code, value) => {
   })
 }
 
+// 获取 ticket
+export const reqTicket = () =>
+  request({
+    name: 'ty-service',
+    data: {
+      action: 'system.userTicket',
+      params: {}
+    }
+  });
