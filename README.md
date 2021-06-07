@@ -1,4 +1,4 @@
-
+#### 注意：当前仓库将会废弃，新的涂鸦 Github 仓库地址参见： https://github.com/tuya/tuya-weapp-demo.
 
 ## 概述
 
